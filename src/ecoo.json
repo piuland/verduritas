@@ -1,28 +1,106 @@
 [
-    {"nombre": "Pan de Espelta", "precio": "380"},
-    {"nombre": "Pan Sencillo", "precio": "350"},
-    {"nombre": "Pan de Ajo", "precio": "350"},
-    {"nombre": "Pan de Especias", "precio": "350"},
-    {"nombre": "Pan de Cebolla", "precio": "350"},
-    {"nombre": "Pan de Pasas", "precio": "370"},
-    {"nombre": "Pan de Semillas", "precio": "370"},
-    {"nombre": "Pan de Centeno", "precio": "350"},
-    {"nombre": "Barra", "precio": "225"},
-    {"nombre": "Hogacita", "precio": "225"},
-    {"nombre": "Hogaza", "precio": "335"},
-    {"nombre": "Pan No Gluten", "precio": "480"},
-    {"nombre": "Pan de Trigo Sarraceno", "precio": "470"},
-    {"nombre": "Bollitos Confinados", "precio": "290"},
-    {"nombre": "Bases Pizza", "precio": "290"},
-    {"nombre": "Bases Pizza No Gluten", "precio": "375"},
-    {"nombre": "Colines Blancos", "precio": "260"},
-    {"nombre": "Colines Intgerales", "precio": "260"},
-    {"nombre": "Galletas Avena", "precio": "350"},
-    {"nombre": "Galletas Algarroba", "precio": "350"},
-    {"nombre": "Galletas Jengibre", "precio": "350"},
-    {"nombre": "Galletas No Azúcar", "precio": "350"},
-    {"nombre": "Madalenas", "precio": "330"},
-    {"nombre": "Madalenas de Cacao", "precio": "340"},
-    {"nombre": "Madalenas No Gluten", "precio": "365"},
-    {"nombre": "Madalenas Cacao No Gluten", "precio": "375"}
+    {
+        "nombre": "Pan de Espelta",
+        "precio": "380"
+    },
+    {
+        "nombre": "Pan Sencillo",
+        "precio": "350"
+    },
+    {
+        "nombre": "Pan de Ajo",
+        "precio": "350"
+    },
+    {
+        "nombre": "Pan de Especias",
+        "precio": "350"
+    },
+    {
+        "nombre": "Pan de Cebolla",
+        "precio": "350"
+    },
+    {
+        "nombre": "Pan de Pasas",
+        "precio": "370"
+    },
+    {
+        "nombre": "Pan de Semillas",
+        "precio": "370"
+    },
+    {
+        "nombre": "Pan de Centeno",
+        "precio": "350"
+    },
+    {
+        "nombre": "Barra",
+        "precio": "225"
+    },
+    {
+        "nombre": "Hogacita",
+        "precio": "225"
+    },
+    {
+        "nombre": "Hogaza",
+        "precio": "335"
+    },
+    {
+        "nombre": "Pan No Gluten",
+        "precio": "480"
+    },
+    {
+        "nombre": "Pan de Trigo Sarraceno",
+        "precio": "470"
+    },
+    {
+        "nombre": "Bollitos Confinados",
+        "precio": "290"
+    },
+    {
+        "nombre": "Bases Pizza",
+        "precio": "290"
+    },
+    {
+        "nombre": "Bases Pizza No Gluten",
+        "precio": "375"
+    },
+    {
+        "nombre": "Colines Blancos",
+        "precio": "260"
+    },
+    {
+        "nombre": "Colines Intgerales",
+        "precio": "260"
+    },
+    {
+        "nombre": "Galletas Avena",
+        "precio": "350"
+    },
+    {
+        "nombre": "Galletas Algarroba",
+        "precio": "350"
+    },
+    {
+        "nombre": "Galletas Jengibre",
+        "precio": "350"
+    },
+    {
+        "nombre": "Galletas No Azúcar",
+        "precio": "350"
+    },
+    {
+        "nombre": "Madalenas",
+        "precio": "330"
+    },
+    {
+        "nombre": "Madalenas de Cacao",
+        "precio": "340"
+    },
+    {
+        "nombre": "Madalenas No Gluten",
+        "precio": "365"
+    },
+    {
+        "nombre": "Madalenas Cacao No Gluten",
+        "precio": "375"
+    }
 ]
