@@ -1,6 +1,10 @@
 [
     {
-        "nombre": "lechuga",
+        "nombre": "berenjena",
+        "pass": ""
+    },
+    {
+        "nombre": "boniato",
         "pass": ""
     },
     {
@@ -8,7 +12,35 @@
         "pass": ""
     },
     {
+        "nombre": "calabacinas",
+        "pass": ""
+    },
+    {
+        "nombre": "cebolla",
+        "pass": ""
+    },
+    {
+        "nombre": "escarola",
+        "pass": ""
+    },
+    {
+        "nombre": "lechuga",
+        "pass": ""
+    },
+    {
+        "nombre": "lombardas",
+        "pass": ""
+    },
+    {
         "nombre": "patata",
+        "pass": ""
+    },
+    {
+        "nombre": "puerro",
+        "pass": ""
+    },
+    {
+        "nombre": "rabanitas",
         "pass": ""
     },
     {
@@ -16,11 +48,19 @@
         "pass": ""
     },
     {
-        "nombre": "berenjena",
+        "nombre": "repollo",
         "pass": ""
     },
     {
-        "nombre": "boniato",
+        "nombre": "romanesco",
         "pass": ""
-    }
+    },
+    {
+        "nombre": "rucula",
+        "pass": ""
+    },
+    {
+        "nombre": "tomate",
+        "pass": ""
+    },
 ]
