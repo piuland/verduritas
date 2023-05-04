@@ -1,3 +1,13 @@
+# App Verduritas
+
+Estoy intentando automatizar los pedidos de mi grupo de consumo.
+La pantalla principal mostrará un pequeño formulario a rellenar por cada grupo y los datos irán a parar a un .odt.
+Este fichero se entregará finalmente al hortelano.
+
+Más adelante intentaría añadir opciones para pedir también los panes a Ecoo.
+
+______________________________________________Ω_______________________________________________
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
