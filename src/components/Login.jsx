@@ -1,29 +1,57 @@
-import React from 'react';
-import {Container, Grid, MenuItem, TextField} from '@mui/material';
-function Login () {
-  const grupos = [
-    {nombre: 'lechuga', pass: ''},
-    {nombre: 'borraja', pass: ''},
-    {nombre: 'patata', pass: ''},
-    {nombre: 'remolacha', pass: ''},
-    {nombre: 'berenjena', pass: ''},
-    {nombre: 'boniato', pass: ''}
-  ];
+import React, { useState } from 'react';
+import { Button, Container, Grid, MenuItem, TextField } from '@mui/material';
+import gruposJson from '../grupos.json'
+function Login() {
+  const [grupo, setGrupo] = useState("")
+  // const [formulario, setFormulario] = useState(false);
+  let formulario = false;
+  const grupos = [];
+  gruposJson.map((grupo, index) => {
+    grupos[index] = { nombre: grupo.nombre, pass: grupo.pass }
+    return grupos;
+  });
+  function showForm() {
+    // setFormulario(true);
+    formulario=true
+  }
   return (
-    <Container className="my-5 gradient-form">
-      <Grid>
-        <TextField 
-        fullWidth 
-        select 
-        variant="outlined" 
-        label="Elige tu verdurita: ">
-          {grupos.map((item) =>
-            <MenuItem>{item.nombre}</MenuItem>
-          )}   
+    <Grid container className="my-5 gradient-form" classes="App.App" sx={{ padding: '5px', alignItems: 'center' }}>
+      <Grid item xs={6}>
+        <TextField
+          fullWidth
+          select
+          size="small"
+          variant="outlined"
+          value={grupo}
+          label="Elige tu verdurita:"
+          onClick={(event) => {
+            setGrupo(event.target.textContent)
+          }
+          }>
+          {grupos.map((item, index) =>
+            <MenuItem
+              value={item.nombre}
+              key={index}
+            >
+              {item.nombre}
+            </MenuItem>
+          )}
         </TextField>
-        <a href="https://docs.google.com/spreadsheets/d/1zMYyRkTT9sTBBec_vMZ1JwrZzSE3eEciDwcHV_XtN9c/edit#gid=0">El Eeeeeexcel</a>
+        <Grid item xs={2}>
+          <Button variant={'outlined'} onClick={showForm()}>Show</Button>
+        </Grid>
+        {formulario===true ?
+          <Grid item>
+            <p>Aquí diseñaremos el formulario para rellenar el Excel.</p>
+            <p>El nombre de tu grupo es: {grupo}</p>
+          </Grid> :
+          <></>
+        }
+        <Grid item>
+          <a href="https://docs.google.com/spreadsheets/d/1zMYyRkTT9sTBBec_vMZ1JwrZzSE3eEciDwcHV_XtN9c/edit#gid=0">El Eeeeeexcel</a>
+        </Grid>
       </Grid>
-    </Container>
+    </Grid>
   );
 }
 export default Login
