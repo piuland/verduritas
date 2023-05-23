@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Button, Grid, MenuItem, TextField } from '@mui/material';
 import gruposJson from '../grupos.json'
-import bgImg from '../2023-05-05 20.30.55.jpg'
+import bgImg from '../d7f740aa3e68295a71acac6d7aa50f9b.jpg'
 function Login() {
   const [grupo, setGrupo] = useState("")
   const [formulario, setFormulario] = useState(false);
@@ -11,10 +11,9 @@ function Login() {
     return grupos;
   });
   return (
-    <div style={{ backgroundImage: `url(${bgImg})` }}>
+    <div style={{ backgroundImage: `url(${bgImg})`,backgroundRepeat: 'no-repeat', width: '100%'}}>
       <Grid
         container
-        
         direction="column"
         alignItems="center"
         justifyContent="center"
@@ -37,9 +36,9 @@ function Login() {
             padding: "20px",
             borderRadius: "10px"
           }}>
-          <Grid 
-          container
-          spacing={5}>
+          <Grid
+            container
+            spacing={3}>
             <Grid item xs={8}>
               <TextField
                 fullWidth
@@ -63,10 +62,10 @@ function Login() {
                 )}
               </TextField>
             </Grid>
-            <Grid item xs={4}>
-              <Button variant={'contained'} color="success" onClick={() => setFormulario(!formulario)}>{!formulario ? 'Show':'Hide' }</Button>
+            <Grid item xs={4} alignItems="right" justifyContent="right">
+              <Button variant={'contained'} color="success" onClick={() => setFormulario(!formulario)}>{!formulario ? 'Show' : 'Hide'}</Button>
             </Grid>
-            {formulario===true ?
+            {formulario === true ?
               <Grid item>
                 El nombre de tu grupo es: {grupo}
               </Grid> :
