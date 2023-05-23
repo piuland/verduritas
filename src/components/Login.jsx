@@ -4,17 +4,12 @@ import gruposJson from '../grupos.json'
 import bgImg from '../2023-05-05 20.30.55.jpg'
 function Login() {
   const [grupo, setGrupo] = useState("")
-  // const [formulario, setFormulario] = useState(false);
-  let formulario = false;
+  const [formulario, setFormulario] = useState(false);
   const grupos = [];
   gruposJson.map((grupo, index) => {
     grupos[index] = { nombre: grupo.nombre, pass: grupo.pass }
     return grupos;
   });
-  function showForm() {
-    // setFormulario(true);
-    formulario = true
-  }
   return (
     <div style={{ backgroundImage: `url(${bgImg})` }}>
       <Grid
@@ -68,13 +63,12 @@ function Login() {
                 )}
               </TextField>
             </Grid>
-            <Grid item xs={3}>
-              <Button variant={'contained'} color="success" onClick={showForm()}>Show</Button>
+            <Grid item xs={4}>
+              <Button variant={'contained'} color="success" onClick={() => setFormulario(!formulario)}>{!formulario ? 'Show':'Hide' }</Button>
             </Grid>
-            {formulario === true ?
-              <Grid item xs={12}>
-                <p>Aquí diseñaremos el formulario para rellenar el Excel.</p>
-                <p>El nombre de tu grupo es: {grupo}</p>
+            {formulario===true ?
+              <Grid item>
+                El nombre de tu grupo es: {grupo}
               </Grid> :
               <></>
             }
