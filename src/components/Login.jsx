@@ -11,7 +11,7 @@ function Login() {
     return grupos;
   });
   return (
-    <div style={{ backgroundImage: `url(${bgImg})`,backgroundRepeat: 'no-repeat', width: '100%'}}>
+    <div style={{ backgroundImage: `url(${bgImg})`, backgroundRepeat: 'no-repeat', width: '100%' }}>
       <Grid
         container
         direction="column"
@@ -63,7 +63,9 @@ function Login() {
               </TextField>
             </Grid>
             <Grid item xs={4} alignItems="right" justifyContent="right">
-              <Button variant={'contained'} color="success" onClick={() => setFormulario(!formulario)}>{!formulario ? 'Show' : 'Hide'}</Button>
+              <Button variant={'contained'} color="success" onClick={() => setFormulario(!formulario)}>
+                {!formulario ? 'Show' : 'Hide'}
+              </Button>
             </Grid>
             {formulario === true ?
               <Grid item>
