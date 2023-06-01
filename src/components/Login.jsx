@@ -5,23 +5,29 @@ import bgImg from '../d7f740aa3e68295a71acac6d7aa50f9b.jpg'
 function Login() {
   const [grupo, setGrupo] = useState({
     nombre :"",
-    tipoPago: "semestral",
-    ultimoPago: "01/01/2023"
+    tipoPago: "",
+    ultimoPago: ""
   })
   const [formulario, setFormulario] = useState(false);
     
   const grupos = [];
-  gruposJson.map((grupo, index) => {
-    grupos[index] = { nombre: grupo.nombre, pass: grupo.pass, ultimoPago: grupo.ultimoPago }
+  gruposJson.map((item, index) => {
+    grupos[index] = { 
+      nombre: item.nombre, 
+      pass: item.pass, 
+      ultimoPago: item.ultimoPago,
+      tipoPago: item.tipoPago }
     return grupos;
   });
   const handleSelectGrupo = (nombre) => {
-    grupos.forEach(grupo => {
-      if (grupo.nombre === nombre) {
+    grupos.forEach(item => {
+      console.log(nombre)
+      if (item.nombre === nombre) {
+        console.log(item.nombre)
         setGrupo({
-          nombre: grupo.nombre,
-          tipoPago: grupo.tipoPago,
-          ultimoPago: grupo.ultimoPago
+          nombre: item.nombre,
+          tipoPago: item.tipoPago,
+          ultimoPago: item.ultimoPago,
         })
       }
     })
@@ -70,8 +76,7 @@ function Login() {
                 value={grupo.nombre}
                 label="Elige tu verdurita:"
                 onClick={(event) => {
-                  setGrupo({...grupo, nombre: event.target.value})
-                  handleSelectGrupo(event.target.value)
+                  handleSelectGrupo(event.target.textContent)
                 }
                 }
                 sx={{ backgroundColor: "white" }}>
