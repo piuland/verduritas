@@ -1,8 +1,8 @@
 # App Verduritas
 
 Estoy intentando automatizar los pedidos de mi grupo de consumo.
-La pantalla principal mostrará un pequeño formulario a rellenar por cada grupo y los datos irán a parar a un .odt.
-Este fichero se entregará finalmente al hortelano.
+La pantalla principal mostrará un pequeño formulario a rellenar por cada grupo y los datos irán a parar a un .json.
+Desde una vista de administrador, se mostrará una tabla con el pedido a realizar cada 3 meses.
 
 Más adelante intentaría añadir opciones para pedir también los panes a Ecoo y los huevos a la granja.
 
