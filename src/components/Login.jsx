@@ -3,15 +3,37 @@ import { Box, Button, Grid, MenuItem, TextField } from '@mui/material';
 import gruposJson from '../grupos.json'
 import bgImg from '../d7f740aa3e68295a71acac6d7aa50f9b.jpg'
 function Login() {
-  const [grupo, setGrupo] = useState("")
+  const [grupo, setGrupo] = useState({
+    nombre :"",
+    tipoPago: "semestral",
+    ultimoPago: "01/01/2023"
+  })
   const [formulario, setFormulario] = useState(false);
+    
   const grupos = [];
   gruposJson.map((grupo, index) => {
-    grupos[index] = { nombre: grupo.nombre, pass: grupo.pass }
+    grupos[index] = { nombre: grupo.nombre, pass: grupo.pass, ultimoPago: grupo.ultimoPago }
     return grupos;
   });
+  const handleSelectGrupo = (nombre) => {
+    grupos.forEach(grupo => {
+      if (grupo.nombre === nombre) {
+        setGrupo({
+          nombre: grupo.nombre,
+          tipoPago: grupo.tipoPago,
+          ultimoPago: grupo.ultimoPago
+        })
+      }
+    })
+  }
   return (
-    <div style={{ backgroundImage: `url(${bgImg})`, backgroundRepeat: 'no-repeat', width: '100%' }}>
+    <div style={{ 
+      backgroundImage: `url(${bgImg})`, 
+      backgroundRepeat: 'no-repeat', 
+      backgroundSize: "cover",
+      maxWidth: '100%', 
+      width: 'auto', 
+      height: 'auto'}}>
       <Grid
         container
         direction="column"
@@ -45,10 +67,11 @@ function Login() {
                 select
                 size="small"
                 variant="outlined"
-                value={grupo}
+                value={grupo.nombre}
                 label="Elige tu verdurita:"
                 onClick={(event) => {
-                  setGrupo(event.target.textContent)
+                  setGrupo({...grupo, nombre: event.target.value})
+                  handleSelectGrupo(event.target.value)
                 }
                 }
                 sx={{ backgroundColor: "white" }}>
@@ -69,7 +92,7 @@ function Login() {
             </Grid>
             {formulario === true ?
               <Grid item>
-                El nombre de tu grupo es: {grupo}
+                La fecha de tu pedido {grupo.tipoPago} es {grupo.ultimoPago}.
               </Grid> :
               <></>
             }

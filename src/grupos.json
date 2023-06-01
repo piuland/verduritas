@@ -1,66 +1,82 @@
 [
     {
         "nombre": "berenjena",
-        "pass": ""
+        "pass": "",
+        "ultimoPago": "01/01/2023"
     },
     {
         "nombre": "boniato",
-        "pass": ""
+        "pass": "",
+        "ultimoPago": "01/01/2023"
     },
     {
         "nombre": "borraja",
-        "pass": ""
+        "pass": "",
+        "ultimoPago": "01/01/2023"
     },
     {
         "nombre": "calabacinas",
-        "pass": ""
+        "pass": "",
+        "ultimoPago": "01/01/2023"
     },
     {
         "nombre": "cebolla",
-        "pass": ""
+        "pass": "",
+        "ultimoPago": "01/01/2023"
     },
     {
         "nombre": "escarola",
-        "pass": ""
+        "pass": "",
+        "ultimoPago": "01/01/2023"
     },
     {
         "nombre": "lechuga",
-        "pass": ""
+        "pass": "",
+        "ultimoPago": "01/01/2023"
     },
     {
         "nombre": "lombardas",
-        "pass": ""
+        "pass": "",
+        "ultimoPago": "01/01/2023"
     },
     {
         "nombre": "patata",
-        "pass": ""
+        "pass": "",
+        "ultimoPago": "01/01/2023"
     },
     {
         "nombre": "puerro",
-        "pass": ""
+        "pass": "",
+        "ultimoPago": "01/01/2023"
     },
     {
         "nombre": "rabanitas",
-        "pass": ""
+        "pass": "",
+        "ultimoPago": "01/01/2023"
     },
     {
         "nombre": "remolacha",
-        "pass": ""
+        "pass": "",
+        "ultimoPago": "01/01/2023"
     },
     {
         "nombre": "repollo",
-        "pass": ""
+        "pass": "",
+        "ultimoPago": "01/01/2023"
     },
     {
         "nombre": "romanesco",
-        "pass": ""
+        "pass": "",
+        "ultimoPago": "01/01/2023"
     },
     {
         "nombre": "rucula",
-        "pass": ""
+        "pass": "",
+        "ultimoPago": "01/01/2023"
     },
     {
         "nombre": "tomate",
-        "pass": ""
+        "pass": "",
+        "ultimoPago": "01/01/2023"
     }
 ]
