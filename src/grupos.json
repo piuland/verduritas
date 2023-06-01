@@ -3,101 +3,118 @@
         "nombre": "berenjena",
         "pass": "",
         "ultimoPago": "16/02/2023",
-        "tipoPago": "semestral"
+        "tipoPago": "semestral",
+        "panes": {}
     },
     {
         "nombre": "boniato",
         "pass": "",
         "ultimoPago": "16/02/2023",
-        "tipoPago": "semestral"
+        "tipoPago": "semestral",
+        "panes": {}
     },
     {
         "nombre": "borraja",
         "pass": "",
         "ultimoPago": "3/11/2022",
-        "tipoPago": "trimestral"
+        "tipoPago": "trimestral",
+        "panes": {}
     },
     {
         "nombre": "calabacinas",
         "pass": "",
         "ultimoPago": "3/11/2022",
-        "tipoPago": "trimestral"
+        "tipoPago": "trimestral",
+        "panes": {}
     },
     {
         "nombre": "cebolla",
         "pass": "",
         "ultimoPago": "3/11/2022",
-        "tipoPago": "trimestral"
+        "tipoPago": "trimestral",
+        "panes": {}
     },
     {
         "nombre": "escarola",
         "pass": "",
         "ultimoPago": "2/05/2023",
-        "tipoPago": "semestral"
+        "tipoPago": "semestral",
+        "panes": {}
     },
     {
         "nombre": "lechuga",
         "pass": "",
         "ultimoPago": "3/11/2022",
-        "tipoPago": "semestral"
+        "tipoPago": "semestral",
+        "panes": {}
     },
     {
         "nombre": "lombardas",
         "pass": "",
         "ultimoPago": "3/11/2022",
-        "tipoPago": "semestral"
+        "tipoPago": "semestral",
+        "panes": {}
     },
     {
         "nombre": "patata",
         "pass": "",
         "ultimoPago": "",
-        "tipoPago": ""
+        "tipoPago": "",
+        "panes": {}
     },
     {
         "nombre": "puerro",
         "pass": "",
         "ultimoPago": "15/02/23",
-        "tipoPago": "semestral"
+        "tipoPago": "semestral",
+        "panes": {}
     },
     {
         "nombre": "rabanitas",
         "pass": "",
         "ultimoPago": "15/02/2023",
-        "tipoPago": "semestral"
+        "tipoPago": "semestral",
+        "panes": {}
     },
     {
         "nombre": "remolacha",
         "pass": "",
         "ultimoPago": "16/02/2023",
-        "tipoPago": "semestral"
+        "tipoPago": "semestral",
+        "panes": {}
     },
     {
         "nombre": "repollo",
         "pass": "",
         "ultimoPago": "01/01/2023",
-        "tipoPago": "semestral"
+        "tipoPago": "semestral",
+        "panes": {}
     },
     {
         "nombre": "romanesco",
         "pass": "",
         "ultimoPago": "16/02/2023",
-        "tipoPago": "semestral"
+        "tipoPago": "semestral",
+        "panes": {}
     },
     {
         "nombre": "repollo",
         "pass": "",
         "ultimoPago": "1/05/2023",
-        "tipoPago": "trimestral"
+        "tipoPago": "trimestral",
+        "panes": {}
     },{
         "nombre": "rucula",
         "pass": "",
         "ultimoPago": "16/08/2023",
-        "tipoPago": "semestral"
+        "tipoPago": "semestral",
+        "panes": {}
     },
     {
         "nombre": "tomate",
         "pass": "",
         "ultimoPago": "16/02/2023",
-        "tipoPago": "semestral"
+        "tipoPago": "semestral",
+        "panes": {}
     }
 ]
