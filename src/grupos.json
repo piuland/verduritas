@@ -2,74 +2,74 @@
     {
         "nombre": "berenjena",
         "pass": "",
-        "ultimoPago": "01/01/2023",
+        "ultimoPago": "16/02/2023",
         "tipoPago": "semestral"
     },
     {
         "nombre": "boniato",
         "pass": "",
-        "ultimoPago": "01/01/2023",
+        "ultimoPago": "16/02/2023",
         "tipoPago": "semestral"
     },
     {
         "nombre": "borraja",
         "pass": "",
-        "ultimoPago": "01/01/2023",
-        "tipoPago": "semestral"
+        "ultimoPago": "3/11/2022",
+        "tipoPago": "trimestral"
     },
     {
         "nombre": "calabacinas",
         "pass": "",
-        "ultimoPago": "01/01/2023",
-        "tipoPago": "semestral"
+        "ultimoPago": "3/11/2022",
+        "tipoPago": "trimestral"
     },
     {
         "nombre": "cebolla",
         "pass": "",
-        "ultimoPago": "01/01/2023",
-        "tipoPago": "semestral"
+        "ultimoPago": "3/11/2022",
+        "tipoPago": "trimestral"
     },
     {
         "nombre": "escarola",
         "pass": "",
-        "ultimoPago": "01/01/2023",
+        "ultimoPago": "2/05/2023",
         "tipoPago": "semestral"
     },
     {
         "nombre": "lechuga",
         "pass": "",
-        "ultimoPago": "01/01/2023",
+        "ultimoPago": "3/11/2022",
         "tipoPago": "semestral"
     },
     {
         "nombre": "lombardas",
         "pass": "",
-        "ultimoPago": "01/01/2023",
+        "ultimoPago": "3/11/2022",
         "tipoPago": "semestral"
     },
     {
         "nombre": "patata",
         "pass": "",
-        "ultimoPago": "01/01/2023",
-        "tipoPago": "trimestral"
+        "ultimoPago": "",
+        "tipoPago": ""
     },
     {
         "nombre": "puerro",
         "pass": "",
-        "ultimoPago": "01/01/2023",
+        "ultimoPago": "15/02/23",
         "tipoPago": "semestral"
     },
     {
         "nombre": "rabanitas",
         "pass": "",
-        "ultimoPago": "01/01/2023",
-        "tipoPago": "trimestral"
+        "ultimoPago": "15/02/2023",
+        "tipoPago": "semestral"
     },
     {
         "nombre": "remolacha",
         "pass": "",
-        "ultimoPago": "01/01/2023",
-        "tipoPago": "trimestral"
+        "ultimoPago": "16/02/2023",
+        "tipoPago": "semestral"
     },
     {
         "nombre": "repollo",
@@ -80,19 +80,24 @@
     {
         "nombre": "romanesco",
         "pass": "",
-        "ultimoPago": "01/01/2023",
+        "ultimoPago": "16/02/2023",
         "tipoPago": "semestral"
     },
     {
+        "nombre": "repollo",
+        "pass": "",
+        "ultimoPago": "1/05/2023",
+        "tipoPago": "trimestral"
+    },{
         "nombre": "rucula",
         "pass": "",
-        "ultimoPago": "01/01/2023",
+        "ultimoPago": "16/08/2023",
         "tipoPago": "semestral"
     },
     {
         "nombre": "tomate",
         "pass": "",
-        "ultimoPago": "01/01/2023",
+        "ultimoPago": "16/02/2023",
         "tipoPago": "semestral"
     }
 ]

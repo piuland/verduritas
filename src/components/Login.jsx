@@ -9,7 +9,6 @@ function Login() {
     ultimoPago: ""
   })
   const [formulario, setFormulario] = useState(false);
-    
   const grupos = [];
   gruposJson.map((item, index) => {
     grupos[index] = { 
@@ -91,7 +90,10 @@ function Login() {
               </TextField>
             </Grid>
             <Grid item xs={4} alignItems="right" justifyContent="right">
-              <Button variant={'contained'} color="success" onClick={() => setFormulario(!formulario)}>
+              <Button 
+              variant={'contained'} 
+              color="success" 
+              onClick={() => setFormulario(!formulario)}>
                 {!formulario ? 'Show' : 'Hide'}
               </Button>
             </Grid>
