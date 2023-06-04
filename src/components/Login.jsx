@@ -2,27 +2,28 @@ import React, { useState } from 'react';
 import { Box, Button, Grid, MenuItem, TextField } from '@mui/material';
 import gruposJson from '../grupos.json'
 import bgImg from '../d7f740aa3e68295a71acac6d7aa50f9b.jpg'
+import Form from './Form.jsx'
 function Login() {
   const [grupo, setGrupo] = useState({
-    nombre :"",
+    nombre: "",
     tipoPago: "",
     ultimoPago: ""
   })
   const [formulario, setFormulario] = useState(false);
   const grupos = [];
   gruposJson.map((item, index) => {
-    grupos[index] = { 
-      nombre: item.nombre, 
-      pass: item.pass, 
+    grupos[index] = {
+      nombre: item.nombre,
+      pass: item.pass,
       ultimoPago: item.ultimoPago,
-      tipoPago: item.tipoPago }
+      tipoPago: item.tipoPago
+    }
     return grupos;
   });
   const handleSelectGrupo = (nombre) => {
     grupos.forEach(item => {
       console.log(nombre)
       if (item.nombre === nombre) {
-        console.log(item.nombre)
         setGrupo({
           nombre: item.nombre,
           tipoPago: item.tipoPago,
@@ -32,13 +33,14 @@ function Login() {
     })
   }
   return (
-    <div style={{ 
-      backgroundImage: `url(${bgImg})`, 
-      backgroundRepeat: 'no-repeat', 
+    <div style={{
+      backgroundImage: `url(${bgImg})`,
+      backgroundRepeat: 'no-repeat',
       backgroundSize: "cover",
-      maxWidth: '100%', 
-      width: 'auto', 
-      height: 'auto'}}>
+      maxWidth: '100%',
+      width: 'auto',
+      height: 'auto'
+    }}>
       <Grid
         container
         direction="column"
@@ -50,15 +52,8 @@ function Login() {
           display="flex"
           justifyContent="center"
           alignItems="center"
-          maxHeight="500px"
           sx={{
             width: "500px",
-            // display: "flex",
-            // justifyContent: "center",
-            // alignItems: "center",
-            // minHeight: "100vh",
-            // marginLeft: "20%",
-            // marginTop: "20%",
             backgroundColor: "beige",
             padding: "20px",
             borderRadius: "10px"
@@ -90,17 +85,23 @@ function Login() {
               </TextField>
             </Grid>
             <Grid item xs={4} alignItems="right" justifyContent="right">
-              <Button 
-              variant={'contained'} 
-              color="success" 
-              onClick={() => setFormulario(!formulario)}>
+              <Button
+                variant={'contained'}
+                color="success"
+                onClick={() => setFormulario(!formulario)}>
                 {!formulario ? 'Show' : 'Hide'}
               </Button>
             </Grid>
             {formulario === true ?
-              <Grid item>
-                La fecha de tu pedido {grupo.tipoPago} es {grupo.ultimoPago}.
-              </Grid> :
+              <>
+                <Grid item xs={12}>
+                  La fecha de tu pedido {grupo.tipoPago} es {grupo.ultimoPago}.
+                </Grid>
+                <Grid item xs={12}>
+                  <Form grupo={grupo.nombre} />
+                </Grid>
+              </>
+              :
               <></>
             }
             <Grid item xs={12}>
