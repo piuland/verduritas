@@ -2,16 +2,45 @@ import React, { useState } from 'react';
 import { Box, Button, Grid, MenuItem, TextField } from '@mui/material';
 import gruposJson from '../grupos.json'
 import bgImg from '../d7f740aa3e68295a71acac6d7aa50f9b.jpg'
+import Form from './Form.jsx'
 function Login() {
-  const [grupo, setGrupo] = useState("")
+  const [grupo, setGrupo] = useState({
+    nombre: "",
+    tipoPago: "",
+    ultimoPago: ""
+  })
   const [formulario, setFormulario] = useState(false);
   const grupos = [];
-  gruposJson.map((grupo, index) => {
-    grupos[index] = { nombre: grupo.nombre, pass: grupo.pass }
+  gruposJson.map((item, index) => {
+    grupos[index] = {
+      nombre: item.nombre,
+      pass: item.pass,
+      ultimoPago: item.ultimoPago,
+      tipoPago: item.tipoPago
+    }
     return grupos;
   });
+  const handleSelectGrupo = (nombre) => {
+    grupos.forEach(item => {
+      console.log(nombre)
+      if (item.nombre === nombre) {
+        setGrupo({
+          nombre: item.nombre,
+          tipoPago: item.tipoPago,
+          ultimoPago: item.ultimoPago,
+        })
+      }
+    })
+  }
   return (
-    <div style={{ backgroundImage: `url(${bgImg})`, backgroundRepeat: 'no-repeat', width: '100%' }}>
+    <div style={{
+      backgroundImage: `url(${bgImg})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: "cover",
+      maxWidth: '100%',
+      width: 'auto',
+      height: 'auto'
+    }}>
       <Grid
         container
         direction="column"
@@ -23,15 +52,8 @@ function Login() {
           display="flex"
           justifyContent="center"
           alignItems="center"
-          maxHeight="500px"
           sx={{
             width: "500px",
-            // display: "flex",
-            // justifyContent: "center",
-            // alignItems: "center",
-            // minHeight: "100vh",
-            // marginLeft: "20%",
-            // marginTop: "20%",
             backgroundColor: "beige",
             padding: "20px",
             borderRadius: "10px"
@@ -45,10 +67,10 @@ function Login() {
                 select
                 size="small"
                 variant="outlined"
-                value={grupo}
+                value={grupo.nombre}
                 label="Elige tu verdurita:"
                 onClick={(event) => {
-                  setGrupo(event.target.textContent)
+                  handleSelectGrupo(event.target.textContent)
                 }
                 }
                 sx={{ backgroundColor: "white" }}>
@@ -63,14 +85,23 @@ function Login() {
               </TextField>
             </Grid>
             <Grid item xs={4} alignItems="right" justifyContent="right">
-              <Button variant={'contained'} color="success" onClick={() => setFormulario(!formulario)}>
+              <Button
+                variant={'contained'}
+                color="success"
+                onClick={() => setFormulario(!formulario)}>
                 {!formulario ? 'Show' : 'Hide'}
               </Button>
             </Grid>
             {formulario === true ?
-              <Grid item>
-                El nombre de tu grupo es: {grupo}
-              </Grid> :
+              <>
+                <Grid item xs={12}>
+                  La fecha de tu pedido {grupo.tipoPago} es {grupo.ultimoPago}.
+                </Grid>
+                <Grid item xs={12}>
+                  <Form grupo={grupo.nombre} />
+                </Grid>
+              </>
+              :
               <></>
             }
             <Grid item xs={12}>
