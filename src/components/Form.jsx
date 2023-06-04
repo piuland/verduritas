@@ -1,32 +1,59 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import ecooJson from '../ecoo.json'
-import { Grid, Typography } from '@mui/material';
+import { Grid, Typography, Button } from '@mui/material';
+// import { AddIcon, RemoveIcon } from '@mui/icons-material';
 
 class Form extends Component {
     render() {
+        // const [ecoo, setEcoo] = useState([])
         const ecoo = []
         ecooJson.map((item, index) => {
             let pre = parseFloat(item.precio) / 100
             ecoo[index] = {
                 nombre: item.nombre,
-                precio: pre
+                precio: pre,
+                cant: 0
             }
             return ecoo
         })
-        console.log(ecoo)
         return (
             <Grid container>
                 <Grid item xs={12}>
-                    <Typography>Pedidos EcooPan</Typography>
+                    <Typography variant={'h6'}>Pedidos EcooPan</Typography>
                 </Grid>
                 {ecoo.map((item) => {
                     return (
                         <Grid container>
-                            <Grid item sx={8}>
-                                {item.nombre} ({item.precio}€)
+                            <Grid item xs={12} sm={8}>
+                                <Typography variant={'subtitle2'} fullWidth>
+                                    {item.nombre} ({item.precio}€)
+                                </Typography>
                             </Grid>
-                            <Grid item sx={4}>
-
+                            <Grid item xs={12} sm={1}>
+                                <Button
+                                    variant={'contained'}
+                                    color={'success'}
+                                    sx={{
+                                        maxWidth: '10px'
+                                    }}>
+                                    +
+                                </Button>
+                            </Grid>
+                            <Grid item xs={12} sm={1}>
+                                <Typography 
+                                variant="button" 
+                                align={'center'}
+                                // display="block"
+                                >
+                                    {item.cant}
+                                </Typography>
+                            </Grid>
+                            <Grid item xs={12} sm={1}>
+                                <Button
+                                    variant={'contained'}
+                                    color={'success'}>
+                                    -
+                                </Button>
                             </Grid>
                         </Grid>
                     )
