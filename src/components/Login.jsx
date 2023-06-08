@@ -22,13 +22,21 @@ function Login() {
   });
   const handleSelectGrupo = (nombre) => {
     grupos.forEach(item => {
-      console.log(nombre)
+      // console.log(nombre)
       if (item.nombre === nombre) {
         setGrupo({
           nombre: item.nombre,
           tipoPago: item.tipoPago,
           ultimoPago: item.ultimoPago,
         })
+      }
+    })
+  }
+  const callBackForm = (grupo, list, pos) => {
+    grupos.forEach(item => {
+      if (item.nombre === grupo) {
+        console.log(list[pos].cant)
+        //TODO llamada a la API
       }
     })
   }
@@ -98,7 +106,7 @@ function Login() {
                   La fecha de tu pedido {grupo.tipoPago} es {grupo.ultimoPago}.
                 </Grid>
                 <Grid item xs={12}>
-                  <Form grupo={grupo.nombre} />
+                  <Form grupo={grupo.nombre} callback={callBackForm} />
                 </Grid>
               </>
               :

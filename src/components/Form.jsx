@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, { Component } from 'react'
 import ecooJson from '../ecoo.json'
 import { Grid, Typography, Button } from '@mui/material';
 // import { AddIcon, RemoveIcon } from '@mui/icons-material';
@@ -31,6 +31,7 @@ class Form extends Component {
                             </Grid>
                             <Grid item xs={12} sm={1}>
                                 <Button
+                                    fullWidth
                                     variant={'contained'}
                                     color={'success'}
                                     sx={{
@@ -39,20 +40,22 @@ class Form extends Component {
                                     +
                                 </Button>
                             </Grid>
-                            <Grid item xs={12} sm={1}>
-                                <Typography 
-                                variant="button" 
-                                align={'center'}
+                            <Grid item xs={12} sm={2}>
+                                <Typography
+                                    fullWidth
+                                    variant="button"
+                                    align={'center'}
                                 // display="block"
                                 >
-                                    {item.cant}
+                                    {item.cant} uds.
                                 </Typography>
                             </Grid>
                             <Grid item xs={12} sm={1}>
                                 <Button
+                                    fullWidth
                                     variant={'contained'}
                                     color={'success'}>
-                                    -
+                                    --
                                 </Button>
                             </Grid>
                         </Grid>
